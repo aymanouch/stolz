@@ -1,0 +1,261 @@
+<!-- start contact form php -->
+<!-- <?php
+    // if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    //     $fname = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
+    //     $lname = filter_var($_POST['lastname'], FILTER_SANITIZE_STRING);
+    //     $mailform = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    //     $phone = filter_var($_POST['phone'], FILTER_SANITIZE_NUMBER_INT);
+    //     $massage = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+    //     // creating array for error
+    //     $formerro = array();
+    //     if(strlen($fname) <= 3){
+    //         $formerro['fname'] = 'first name must be larger than <strong>3</strong> characters ';
+    //     }
+    //     if(strlen($lname) <= 3){
+    //         $formerro['lname'] = 'last name must be larger than <strong>3</strong> characters ';
+    //     }
+    //     if(strlen($massage) <= 10){
+    //         $formerro['massage'] = 'message name must be larger than <strong>10</strong> characters ';
+    //     }
+    //     if(strlen($phone) <= 9 && strlen($phone) > 0 ){
+    //         $formerro['phone'] = 'phone number must be larger than <strong>9</strong> characters ';
+    //     }
+    //     $header = 'from : ' . $mailform .'\r\n';
+    //     $massage = 'my name is : ' . $fname + ' ' . $lname . $massage;
+    //     if (empty($formerro)) {
+    //         mail('aymanouchedih1997@gmail.com', 'client stolz website', $massage, $header);
+    //     }
+    // }
+        ?> -->
+<!-- end contact form php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>stolz</title>
+    <!--add file css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--add fontawesome lib-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--add fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700|Roboto:300,400,900|Anton|Beth+Ellen&display=swa" rel="stylesheet">
+    <!--add jquery lib-->
+    <script src="js/lib/jquery-3.3.1.min.js"></script>
+    
+</head>
+<body>
+        <div id="ctn"> 
+                <a href="html/germ.html"><img src="css/img/icon/ger.png" alt='germany'></a> 
+                <a href="html/arabe.html"><img src="css/img/icon/egy.png" alt='egybt'></a> 
+        </div>
+    <main>
+        <div class="overly">
+        <div class="container">
+            <nav>
+                <div class="menu">
+                <div class="left-menu">
+                <div id="logo"><span>ST</span></div>
+                <ul class="first-list">
+                    <li><a href="" class="active" data-show="fruit" data-indice="0">fruit<span><img src="css/img/icon/fruit.svg"></span></a></li>
+                    <li><a href="" data-show="vege" data-indice="1">vegetable<span><img src="css/img/icon/vegetable.svg"></span></a></li>
+                    <li><a href="" data-show="whme" data-indice="2">white meat<span><img src="css/img/icon/whitemeat.svg"></span></a></li>
+                    <li><a href="" data-show="reme" data-indice="3">red meat<span><img src="css/img/icon/redmeat.svg"></span></a></li>
+                    <li><a href="" data-show="oil" data-indice="4">oils<span><img src="css/img/icon/oil.svg"></span></a></li>
+                    <li><a href="" data-show="cere" data-indice="5">foodstuffs<span><img src="css/img/icon/cereals.svg"></span></a></li>
+                    <li class="icon-bar hide"><i class="fas fa-align-left"></i></li>
+                </ul>
+            </div>
+                <div class="right-menu">
+                    <ul class="last-list">
+                        <li><a href="#" class="contact">About</a></li>
+                        <li><a href="#" class="icon" id="location"><i class="fas fa-map-marker-alt"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--start content -->
+        <div class="content">
+            <!--start box left-->
+                <div class="box-left">
+                  <div class="pad-left">
+                    <div class="into">
+                     <h1><p>Stolz</p><p>Company</p></h1>
+                     <div class="text">
+                     <p>We are proud to have a great history in serving our customers everywhere with high quality products.
+                        Our company is committed to providing the best services to its customers
+                        We are distinguished as a service oriented company by adapting our services to all the personal requirements of our
+                        customers so that they fit through quality and technology.
+                        As such, we strictly follow the highest standards of food hygiene and safety.
+                         </p>
+                    </div>
+                    </div>
+                    <div class="three">
+                       <div class="box1"><p>I would like to thank all of our customers and partners for our constant trust and support to offer our best to be always
+                        in the lead</p></div>
+                       <div class="box2"><p> I thank our staff for contributing to the success of the work.</p></div> 
+                       <div class="box3"><p>Do not forget to communicate with us for more</p></div> 
+                    </div>
+                    <div class="copy">&copy; copyright reserve by stolz</div>
+                  </div>
+                </div>
+                <!--start box right-->
+                <div class="box-right">
+                    <div class="social">
+                        <div><a href="https://www.instagram.com/stolzcompany/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                        <div><a href="https://www.facebook.com/Stolz-company-351346672182392/" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+                        <div><a href="https://wa.me/+436604879790"><i class="fab fa-whatsapp"></i></a></div>
+                    </div>
+                    <!--start box product-->
+                    <div class="box-pro show" id="fruit">
+                            <h1>fruits</h1>
+                            <p>We provide our customers with the finest fruits in her season we so that we care very much for this and also for packing her to preserve on her</p>
+                            <div class="img">
+                                    <img src="css/img/image/fruitimg.jpg" alt="fruit">
+    
+                            </div>
+                            <p>Do not forget to communicate with us for more.</p>
+                            
+                     </div>
+                    <div class="box-pro" id="vege">
+                        <h1>vegetable</h1>
+                        <p>We provide our customers with the finest vegetable in her season we so that we care very much for this and also for packing her to preserve on her</p>
+                        <div class="img">
+                                <img src="css/img/image/vegetableimg.jpg" alt="vegetable">
+
+                        </div>
+                        <p>Do not forget to communicate with us for more.</p>
+                        
+                    </div>
+                    <div class="box-pro" id="whme">
+                            <h1>white meat</h1>
+                            <p>We provide our customers with the finest types of white meat, which eat with natural feed, so our products are 100% natural</p>
+                            <div class="img">
+                                    <img src="css/img/image/whitemeatimg.jpg" alt="white meat">
+    
+                            </div>
+                            <p>Do not forget to communicate with us for more.</p>
+                            
+                        </div>
+                    <div class="box-pro" id="reme">
+                        <h1>red meat</h1>
+                        <p>We provide our customers with the finest types of red meat, which eat with natural feed, so our products are 100% natural</p>
+                        <div class="img">
+                                <img src="css/img/image/redmeatimg.jpg" alt="red meat">
+
+                        </div>
+                        <p>Do not forget to communicate with us for more.</p>
+                        
+                    </div>
+                    <div class="box-pro" id="oil">
+                            <h1>oils</h1>
+                            <p>Natural olive oil This is true if you love this product we are available this prouduct in good quantities to our valued customers.</p>
+                            <div class="img">
+                                    <img src="css/img/image/oilsimg.jpg" alt="oils">
+    
+                            </div>
+                            <p>Do not forget to communicate with us for more.</p>
+                            
+                        </div>
+                        <div class="box-pro" id="cere">
+                                <h1>foodstuffs</h1>
+                                <p>Do not forget that we have lentils, beans and almost all other products available to us and all food products</p>
+                                <div class="img">
+                                        <img src="css/img/image/foods.jfif"  alt="foodstuffs">
+        
+                                </div>
+                                <p>Do not forget to communicate with us for more.</p>
+                                
+                            </div>
+                            
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- start contact form -->
+    <div class="contact-form">
+            <div class="overly">
+            <div class="close"><i class="fas fa-times"></i></div>
+            <div class="about-box" id="about">
+                  <div class="ab-left">
+                      <img src="css/img/image/img_pub.jfif" alt="stolz">
+                    <h2 class="stolz"><span>s</span>tolz</h2>
+                  </div>
+                  <div class="ab-right">
+                    <h1>About</h1>
+                   <p>stolz-company is a web site for the recognition of the services of a company which is buying and selling products available on the website.</p>
+                    <p>To find out about the site designer, you can contact him via social networking sites at the bottom</p>
+                    <div class="cicle ci1"></div>
+                    <div class="cicle ci2"></div>
+                    <div class="cicle ci3"></div>
+                    <div class="cicle ci4"></div>
+                    <div class="cicle ci5"></div>
+                    <div class="ayman-social">
+                        <div><a href="https://www.instagram.com/aymanaymanjs/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                        <div><a href="https://www.facebook.com/ayman.js.925" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+                        <div><a href="https://www.linkedin.com/in/ayman-ayman-206b1318b//" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+            </div>
+               <!--  <form action="<?php //echo $_SERVER['PHP_SELF'] ?>" method="POST">
+                    <div class="fr-name">
+                        <div class="faux">first name must be larger than <strong>3</strong> characters</div>
+                      <label > frist name</label>
+                      <input type="text" name="firstname" class="frs" value="<?php //if (isset($fname)) {echo $fname;}?>">
+                    </div>
+                    <div class="fr-name">
+                    <div class="faux">last name must be larger than <strong>3</strong> characters </div>
+                      <label > last name</label>
+                      <input type="text" name="lastname" value="<?php //if (isset($lname)) {echo $lname;} ?>">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div>
+                    <div class="faux">please enter your email </div>
+                      <label >email</label>
+                      <input type="email" name="email" value="<?php// if (isset($mailform)) {echo $mailform;} ?>">
+                    </div>
+                    <div>
+                    <div class="faux">phone number must be larger than <strong>9</strong> characters</div>
+                      <label >phone</label>
+                      <input type="number" name="phone" value="<?php //if (isset($phone)) {echo $phone;} ?>">
+                    </div>
+                    <div>
+                    <div class="faux">message name must be larger than <strong>10</strong> characters</div>
+                      <label>message</label>
+                      <textarea name="message"><?php //if (isset($massage)) { echo $massage;} ?></textarea>
+                    </div>
+                    <input type="submit" value="submit" class="btn">
+
+                </form> -->
+            </div>
+        </div>
+        <!-- start map  -->
+        <div class="map-google">
+            <div class="overly">
+                    <div class="close"><i class="fas fa-times"></i></div>
+                    <div id="map"></div>
+            </div>
+        </div>
+    <script src="js/stolz.js"></script>
+    <script>
+    // Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 30.031794, lng: 31.014497};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--add google maps-->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY2bniqg3lUCb3laSK2gVuUPOOpgEW0L0&callback=initMap">
+    </script>
+</body>
+</html>

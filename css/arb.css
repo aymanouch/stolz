@@ -1,0 +1,74 @@
+/* 
+font-family: 'Cairo', sans-serif;
+font-family: 'Amiri', serif;
+*/
+/* start ctn for language  */
+#ctn{
+    left:3%;
+}
+
+/* start ctn for language  */
+
+/* start  global change dire and font  */
+p, a{
+    direction: rtl !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+.into h1 p{
+    direction: ltr !important;
+}
+/* end global change dire and font  */
+/* start content  box left*/
+.box-left .into .text {
+    padding: 0 0px 0 16px;
+    line-height: 26px;
+}
+.box-left .three{
+    flex-direction: row-reverse;
+}
+.box-left .three .box1, .box2{
+    padding-left:24px;
+}
+.box-left .three .box3{
+    padding-right: 16px;
+}
+/* end content  box left*/
+
+/* start content  box right*/
+.box-right .box-pro h1{
+    font-family: 'Amiri', cursive;
+    padding: 8px 8px 8px 0px;
+    direction: rtl;
+}
+/* end content  box left*/
+
+
+/* start about box right  */
+#about .ab-right h1{
+    text-align: right;
+    padding-right: 16px;
+    font-family: 'Amiri', serif;
+}
+
+/* strat media for arabe page  */
+@media only screen and (max-width: 768px){
+    /*start  langage  box */
+    #ctn{
+        direction: ltr;
+        left: 85%;
+        top: 3%;   
+    }
+
+    /* end language box */
+    /* strat first list menu  */
+    nav .menu ul.first-list{
+        height: 322px
+
+    }
+    /* end first list menu  */
+
+    .content .box-left .into .text {
+        padding: 0 22px 0 0;
+    }
+}
+/* end media for arabe page  */

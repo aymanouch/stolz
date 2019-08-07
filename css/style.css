@@ -1,0 +1,726 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Beth Ellen', cursive;
+*/
+/*---start fixed classes */
+.container{
+    width:90%;
+    margin: auto;
+}
+.pad-left{
+    padding-left:17%;
+}
+.overly{
+    width: 100%;
+    height:100%;
+    background-color: #00000080;
+}
+.close{
+    position: absolute;
+    right: 21px;
+    top:10px;
+    font-size: 36px;
+    cursor: pointer;
+    color: #fff;
+} 
+.clearfix{
+    clear: both;
+}
+/*---end fixed classes */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+}
+/* start language menu */
+#ctn{
+    top: 35%;
+    position: absolute;
+    width: 60px;
+    height: 95px;
+    left: 5%;
+    z-index:1;
+}
+#ctn a{
+    position: relative;
+    z-index:1;
+    display: block;
+    height:33.3333%;
+
+}
+/* end language menu */
+
+/* start main  */
+main{
+    width:100%;
+    height:100vh;
+    background-image:url('img/image/fruitimg.jpg');
+    background-size: cover;
+    overflow-y: hidden;
+}
+/* start preparation nav */
+nav{
+    width: 100%;
+    height:18vh;
+    padding-top: 52px;
+    overflow: hidden;
+    
+}
+nav .menu{
+    width:100%;
+    height:auto;
+}
+nav .menu ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin:0;
+    height:60px;
+    line-height: 60px;
+
+}
+nav .menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    text-transform:capitalize;
+    position: relative;
+    display: inline-block;
+    padding: 0px 18px;
+    
+}
+nav .menu ul.first-list li.icon-bar{
+    width: 40px;
+    height:40px;
+    right: -40px;
+    position: absolute;
+    top: 50%;
+    margin-top:-20px;
+    display: none;
+    line-height: 20px;
+    cursor: pointer;
+
+}
+nav .menu ul.first-list li a span{
+    position:absolute;
+    right: 50%;
+    margin-right: -24px;
+    transform-origin: left;  
+    top:-30px;
+    width:0%;
+    height: 48px;
+    border-radius: 3px;
+    transition: all .5s ease;
+}
+nav .menu ul.first-list li a span img{
+    width: 100%;
+    height:100%;
+    display: block;
+}
+nav .menu ul li a.active span{
+    width:48px;
+}
+nav .menu ul.first-list li a:hover span{
+    width:40%;
+}
+
+/* start preparation left menu */
+.left-menu{
+    width:70%;
+    float:left;
+    display: flex;
+}
+.left-menu #logo{
+    width:10%;
+    border:3px solid #fff;
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+.left-menu ul.first-list{
+    width:90%;
+    padding-left:64px;
+
+}
+/* end  preparation left menu */
+
+/* start preparation reight menu */
+.right-menu{
+    width:30%;
+    float:left;
+    overflow: hidden;
+    padding-left: 13%;
+}
+.right-menu ul.last-list li a:hover{
+    color:#000;
+}
+/* end  preparation right menu */
+/* end preparation nav */
+/* end main  */
+
+/* start preparation content */
+.content{
+    display: flex;
+}
+/* start preparation box left */
+
+.box-left{
+    width:60%;
+    margin-left: 5%;
+    height:82vh;
+    position: relative;
+}
+.box-left .into{
+    padding-top:72px;
+}
+.box-left .into h1{
+    margin: 0;
+    padding: 0;
+    font-size: 56px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    line-height: 2px;
+    font-family: 'Anton', sans-serif;
+
+}
+.box-left .into .text{
+    padding:0 80px 0 0;
+    line-height:26px;
+}
+.box-left .three{
+    display: flex;
+    height: 136px;
+    justify-content: space-between;
+    line-height: 20px;
+}
+.box-left .three .box1{
+    padding-right: 24px;
+}
+.box-left .three .box2{
+    padding-right: 24px;
+}
+.box-left .copy{
+    position: absolute;
+    left: -92px;
+    bottom: 110px;
+    transform: rotate(90deg);
+}
+/* end preparation box left */
+/* start preparation box right */
+
+.box-right{
+    width: 35%;
+    height:82vh;
+    position: relative;
+}
+.box-right .social{
+    display: flex;
+    width: 90%;
+    margin:24px auto 0 auto;
+    text-align: center;
+    height: 60px;
+    line-height:60px;
+    justify-content: center;
+}
+.box-right .social div{
+    width:60px;
+    height:60px;
+    margin-left:16px;
+    background:#fff;
+    border-radius:50%;
+    transition: all .5s ease;
+}
+.box-right .social div:hover{
+    transform:scale(1.1, 1.1);
+}
+.box-right .social div:first-child{
+    margin-left:0;
+}
+.box-right .social div a{
+    text-decoration: none;
+    color:#000;
+    font-size: 25px;
+    display: inline-block;
+    width:100%;
+    height:100%;
+}
+.box-right .box-pro{
+    width: 90%;
+    height: 65vh;
+    background:#fff;
+    box-shadow: -19px 20px 0px #ffffff21;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    color: #000;
+    display:none;
+    border-radius: 3px;
+}
+.box-right .box-pro.show{
+    display:block;
+}
+.box-right .box-pro h1{
+    margin:0;
+    padding:0;
+    font-family: 'Kalam', cursive;
+    padding: 8px 0 8px 8px
+}
+.box-right .box-pro p{
+    padding: 0 16px 0 16px;
+    line-height:24px;
+}
+.box-right .box-pro .img{
+    width:90%;
+    height:154px;;
+    margin:auto;
+}
+.box-right .box-pro .img img{
+    display:block;
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+/* end preparation box right */
+/* end preparation content */
+/* --------------------------------------------------------------------------------------------------------------- */
+/*strat preparation about box  */
+.contact-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    display: none;
+}
+.contact-form .overly{
+    display:flex;
+    align-items: center;
+}
+.contact-form #about{
+    width: 90%;
+    background: #000;
+    color: #fff;
+    margin:auto;
+    height: 75%;
+    border-radius:6px;
+}
+#about .ab-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding: 8px;
+}
+#about .ab-left img{
+    position: absolute;
+    top: -10%;
+    left: 17%;
+    width: auto;
+    height: 100%;
+}
+#about .ab-left h2.stolz{
+    font-family: 'Beth Ellen', cursive;
+    position: absolute;
+    z-index:999;
+    top: 50%;
+    margin: 0;
+    left: 65%;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+#about .ab-right{
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow:hidden;
+    position: relative;
+    padding: 8px;
+    z-index: 1;
+}
+#about .ab-right h1{
+    text-transform: uppercase;
+    z-index: 999;
+    position: relative;
+}
+#about .ab-right p{
+    color: #828282;
+    letter-spacing: 3px;
+    line-height: 40px;
+    z-index: 999;
+    position: relative;
+}
+#about .ab-right .cicle{
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    transition: all .5 ease;
+}
+#about .ab-right .ci1{
+    width:100px;
+    height:100px;
+    border: 10px solid #161616;
+    top: 0;
+    left: 92%;
+
+}
+#about .ab-right .ci2{
+    width: 100px;
+    height: 100px;
+    border: 10px solid #161616;
+    top: 6%;
+    left: 55%;
+    background: #161616
+
+}
+#about .ab-right .ci3{
+    width: 150px;
+    height: 150px;
+    border: 10px solid #161616;
+    top: 87%;
+    left: 83%;
+    background: #161616;
+
+}
+#about .ab-right .ci4{
+    width: 200px;
+    height: 200px;
+    border: 10px solid #161616;
+    top: 33%;
+    left: -20%;
+    background: #161616;
+
+}
+#about .ab-right .ci5{
+    width: 200px;
+    height: 200px;
+    border: 10px solid #161616;
+    top: 33%;
+    left: -20%;
+    background: #161616;
+    width: 20px;
+    height: 20px;
+    border: 10px solid #161616;
+    top: 81%;
+    left: 6%;
+    background: #161616;
+
+}
+#about .ab-right .ayman-social{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    
+
+}
+#about .ab-right .ayman-social div a{
+    display: inline-block;
+    padding: 0 16px;
+    color: #fff;
+    font-size: 18px
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* .contact-form form{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:50%;
+    height:600px;
+    background:#fff;
+    padding:8px 0 8px 0px;
+    border-radius: 10px;
+}
+.faux{
+    width: 95%;
+    margin: 2px auto;
+    background: #ffa6a6;
+    border: 1px solid #b13030;
+    text-align: center;
+    border-radius: 5px;
+    color: #a50000;
+    padding: 4px;
+    visibility: hidden;
+}
+.contact-form form label,
+input, textarea {
+display: block;
+width: 85%;
+margin:auto;
+}
+.contact-form form label{
+    margin: 8px auto 8px auto;
+    text-transform: uppercase;
+    font-weight:900;
+}
+.contact-form form input:not(.btn){
+    border:none;
+    outline: none;
+    height: 14px;
+    border-bottom: 2px solid #000;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.contact-form form textarea{
+    height:80px;
+    border: 2px solid #000;
+    outline: none;
+    font-size: 14px;
+}
+.contact-form form .btn{
+    width: 30%;
+    height: 40px;
+    margin: 8px 7% 0 0;
+    float: right;
+    background:#000;
+    color:#fff;
+    border:none;
+    outline: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight:900;
+    letter-spacing: 10px;
+}
+.contact-form form .btn:hover{
+    background: #0d0c0c
+} */
+/*end preparation about form  */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* strat preparateion of the google map */
+.map-google{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+}
+.map-google .overly{
+    display: flex;
+    align-items: center;
+
+}
+#map{
+    width:80%;
+    height:500px;
+    background:#fff;
+    margin: auto;
+    
+
+}
+
+/* end preparateion of the google map */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* strat media screen */
+@media only screen and (max-width: 768px) {
+    /*start  langage  box */
+    #ctn{
+        left:80%;
+        top:3%;
+        z-index: 0;
+    }
+
+    /* end language box */
+
+    /* start preparation media   main  */
+    main{
+        height:auto;
+        overflow: auto;
+    }
+
+
+    /* start preparation  main  */
+    /*start  media for fix class  */
+    .overly{
+        height:auto;
+    }
+
+    /*start  media for fix class  */
+/* -------------------------------------------------------------------------------------------------------------------- */
+    /* start media to nav bar  */
+    nav{
+        height:auto;
+        padding-top:24px;
+    }
+    nav .menu div {
+        display:block;
+        float: none;
+        padding:0;
+        width:100%;
+    }
+    nav .menu ul{
+        display: block;
+        padding: 0;
+        margin:0;
+        float: none;
+        height:auto;
+        line-height:normal;
+        padding:0;
+        width: 100%;
+    }
+    nav .menu ul.first-list{
+        padding-left:0;
+        width: 100%;
+        padding-left: 0;
+        width: 84%;
+        height: 271px;
+        position: fixed;
+        z-index: 999;
+        left: -84%;
+        background: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #a29f9f;
+    }
+    nav .menu ul li{
+        display: block;
+        float:none;
+        text-align: center;
+        padding: 12px 0px;
+    }
+    nav .menu ul.first-list li.icon-bar{
+        display: block;
+        color: #009688;
+        font-size: 24px;
+    }
+    nav .menu ul.first-list li a{
+        color:#000;
+    }
+    nav .menu ul.first-list li a span{
+        top: -16px;
+        width: 100%;
+        height: 48px;
+        right: 146px;
+    }
+    nav .menu ul.first-list li a span img{
+        width: 100%;
+        height: 87%;
+       
+    }
+    /* end  media to nav bar  */
+/* ------------------------------------------------------------------------------------------------------------------- */
+    /* start media to content */
+    .content{
+        display:block;
+        overflow: hidden;
+        margin-top: 64px;
+        height: auto;
+
+    }
+    .content .box-left{
+        margin-left:0;
+        padding-left:5%;
+        overflow: hidden;
+        margin: 16px 0;
+        height:88vh;
+        width: 100%;
+
+    }
+    .content .box-left .pad-left{
+        padding-left:0;
+    }
+    .content .box-left .into{
+        padding-top:0;
+    }
+    .content .box-left .into .text{
+        padding:0;
+    }
+    .content .box-left .three{
+       display: block;
+    }
+    .content .box-right{
+        height: 108vh;
+        width: 100%;
+
+    }
+    .content .box-right .box-pro{
+        width: 100%;
+        height: 85vh;
+        box-shadow:none; 
+
+    }
+    .content .box-right .box-pro .img{
+        height: 215px;
+    }
+
+     /* end media to content */
+     /* ------------------------------------------------------------------------------------------------------------- */
+     /* start contact form media  */
+     .contact-form .overly{
+         height: 100%;
+     }
+     .contact-form #about{
+        margin: 50px auto;
+        height: 75%;
+     }
+     #about .ab-left{
+         display: none;
+     }
+     #about .ab-right{
+        width: 100%;
+        float: none;
+    }
+    #about .ab-right .ayman-social{
+        right: 60%;
+    }
+     /* .contact-form form{
+         width:80%;
+         height: auto;
+     }
+     .contact-form form label{
+         margin:8px auto;
+         font-size: 15px;
+     }
+     .contact-form form input:not(.btn){
+         font-size:13px;
+         height:20px;
+     }
+     .contact-form form input.btn{
+         letter-spacing: normal;
+     }
+     .contact-form form textarea{
+         height:100px;
+         font-size: 13px;
+     }
+     .contact-form form .fr-name{
+         width:50%;
+         height:100px;
+         float: left;
+     }
+     .faux{
+    display: block;
+} */
+
+     /* end contact form media  */
+
+     /* start preparation to map  */
+     #map{
+         height:465px;
+         margin-top:9%;
+     }
+     .map-google .overly{
+         height:100%;
+     }
+
+     /* start preparation to map  */
+  }
+/* end preparation google map */
